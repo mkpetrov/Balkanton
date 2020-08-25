@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balkanton", "Balkanton\Balkanton.csproj", "{9762F8C1-41BE-4ACB-AD91-C5A069DF6287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{CC19D443-9BA1-4E84-BF8D-9973AD779B61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9762F8C1-41BE-4ACB-AD91-C5A069DF6287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9762F8C1-41BE-4ACB-AD91-C5A069DF6287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9762F8C1-41BE-4ACB-AD91-C5A069DF6287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9762F8C1-41BE-4ACB-AD91-C5A069DF6287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC19D443-9BA1-4E84-BF8D-9973AD779B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC19D443-9BA1-4E84-BF8D-9973AD779B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC19D443-9BA1-4E84-BF8D-9973AD779B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC19D443-9BA1-4E84-BF8D-9973AD779B61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F6A25DD-9A05-4A7F-AD3E-B401676C88C0}
+	EndGlobalSection
+EndGlobal
