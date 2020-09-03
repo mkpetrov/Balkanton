@@ -13,17 +13,21 @@ namespace Data.Models
         public string Name { get; set; }
 
         [DataType("decimal(18, 3)")]
-        public decimal MyProperty { get; set; }
+        public decimal Price { get; set; }
 
         [ForeignKey(nameof(Category))]
         public int CategoryId { get; set; }
 
         public Category Category { get; set; }
 
+        public bool IsDigital { get; set; }
+
         public ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
 
         public ICollection<Comments> Comments { get; set; } = new HashSet<Comments>();
 
         public ICollection<ProductStoreQuantity> Quantities { get; set; } = new HashSet<ProductStoreQuantity>();
+
+        public ICollection<Order> Orders { get; set; } = new HashSet<Order>();
     }
 }

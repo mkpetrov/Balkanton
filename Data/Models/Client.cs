@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Data.Models
@@ -24,8 +25,20 @@ namespace Data.Models
         [MaxLength(50)]
         public string Password { get; set; }
 
+        public byte[] AvatarImage { get; set; }
+
+        [Required]
+        public string Email { get; set; }
+
+        [Required]
+        public DateTime BirthDate { get; set; }
+
         public ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
 
         public ICollection<Comments> Comments { get; set; } = new HashSet<Comments>();
+
+        public ICollection<Order> Orders { get; set; } = new HashSet<Order>();
+
+        public ICollection<Address> Addresses { get; set; } = new HashSet<Address>();
     }
 }

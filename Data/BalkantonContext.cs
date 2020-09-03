@@ -19,6 +19,14 @@ namespace Data
 
         public DbSet<ProductStoreQuantity> ProductsStoreQuantities { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+
+        public DbSet<Employee> Employees { get; set; }
+
+        public DbSet<OrderStatus> OrderStatuses { get; set; }
+
+        public DbSet<Address> Addresses { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
