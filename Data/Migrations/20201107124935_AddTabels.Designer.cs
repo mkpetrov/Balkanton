@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(BalkantonContext))]
-    [Migration("20200903171840_AddAddressEmployeeOrderOrderStatusTables")]
-    partial class AddAddressEmployeeOrderOrderStatusTables
+    [Migration("20201107124935_AddTabels")]
+    partial class AddTabels
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -245,9 +245,6 @@ namespace Data.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDigital")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()

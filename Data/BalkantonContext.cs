@@ -39,6 +39,9 @@ namespace Data
         {
             modelBuilder.Entity<ProductStoreQuantity>()
                 .HasKey(psq => new { psq.ProductId, psq.StoreId });
+
+            modelBuilder.Entity<DigitalProducts>();
+            modelBuilder.Entity<PhysicalProduct>();
         }
     }
 }

@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Data.Models
 {
-    public class Product
+    public abstract class Product
     {
         public int Id { get; set; }
 
@@ -14,13 +13,6 @@ namespace Data.Models
 
         [DataType("decimal(18, 3)")]
         public decimal Price { get; set; }
-
-        [ForeignKey(nameof(Category))]
-        public int CategoryId { get; set; }
-
-        public Category Category { get; set; }
-
-        public bool IsDigital { get; set; }
 
         public ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
 
